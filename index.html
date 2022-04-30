@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Physics Based Image Deshadowing Using Local Linear Model</title>
+	  
+	  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  
+      <link href="css/carousel2.css" rel="stylesheet"> -->
+
+		  
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <link href="favicon.png" rel="shortcut icon">
+
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <meta name="description" content="The most powerful Coming Soon / Errors / Domain For Sale template">
+      <meta name="keywords" content="Constantly we add new demos at users requests. So far we will create templates for: electric, veterinarian, loan agency, charity agency, sitter, moving company, barber, health magazine, book writer, plumber, art agency, interior design company, webmaster, application, seo agency, university, event company, developer, car rental, band, gym, designer, marketing agency, hosting company, travel agency, real estate company, photographer, renovator, small business company, hotel, mechanic, lawyer, school, shop and much more. If you have own idea for great 404/Coming Soon/Domain For Sale, please do not hestitate and tell us about that. We consider all your ideas!">
+      
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/form.css" rel="stylesheet">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link href="css/prettyPhoto.css" rel="stylesheet">
+
+      <link rel="apple-touch-icon" sizes="favicons/180x180" href="favicons/apple-touch-icon.png">
+      <meta name="theme-color" content="#ffffff">
+
+      <meta property="og:url" content="http://povestea-noastra.com/theme/huge404/_landing/index.html" />
+      <meta property="og:title" content="HUGE - Multipurpose Coming Soon Error 404 Domain For Sale" />
+      <meta property="og:description" content="The most powerful Coming Soon / Errors / Domain For Sale template." />
+      <meta property="og:image" content="https://povestea-noastra.com/theme/huge404/_landing/images/img-fb/default.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="fb:app_id" content="1938138009790018" />
+
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://povestea-noastra.com/theme/huge404/_landing/images/img-fb/default.jpg">
+      <meta name="twitter:site" content="@povestea-noastra">
+      <meta name="twitter:creator" content="@G">
+      <meta name="twitter:title" content="HUGE - Multipurpose Coming Soon Error 404 Domain For Sale">
+      <meta name="twitter:description" content="The most powerful Coming Soon / Errors / Domain For Sale template.">
+   </head>
+   <body ng-app="company">
+      <div class="all-wrapper">
+         <header class="desktop-menu menu-top-w menu-activated-on-hover navbar-fixed-top">
+            <div class="menu-top-i os-container">
+			<!--
+               <ul class="main-menu">
+                  <li class="active">HUGE <sup class="version">{{verion}}</sup></li>
+               </ul>
+			-->
+               <ul class="main-menu">
+                  <li class="active"><a href="#sectionIntro">Home</a></li>
+                  <li><a href="#sectionAbstract">Abstract</a></li>
+				  <li><a href="#sectionCoeffRed">Coefficients</a></li>
+				  <li><a href="#image1">Masks</a></li>
+				  <!--<li><a href="#table1">Optimal Models</a></li>-->
+				  <li><a href="#table2">Architecture</a></li>
+
+                  <!--<li><a href="#sectionLinearShadowModel">Linear Shadow Model</a></li>
+                  <li><a href="#sectionMethod">Method</a></li>-->
+				  <li><a href="#sectionExamples">ISTD+ </a></li>
+				  <li><a href="#example_1">SRD </a></li>
+				  <!--<li><a href="#example_2">Masks Creation Method</a></li>-->
+               </ul>
+			   <!--
+               <ul class="small-menu">
+                  <li><a href="https://themeforest.net/user/squirrellabs/portfolio?ref=SquirrelLabs">Support</a></li>
+                  <li><a class="highlight" href="https://themeforest.net/user/squirrellabs/portfolio?ref=SquirrelLabs">Purchase</a></li>
+               </ul>-->
+            </div>
+			<!--
+            <div class="mobile-menu-w">
+               <div class="mobile-menu-holder color-scheme-dark">
+                  <ul class="mobile-menu">
+                     <li class="active">HUGE</li>
+                     <li><a href="https://themeforest.net/user/squirrellabs/portfolio?ref=SquirrelLabs">Support</a></li>
+                     <li><a href="https://themeforest.net/user/squirrellabs/portfolio?ref=SquirrelLabs">Purchase</a></li>
+                  </ul>
+               </div>
+               <div class="mobile-menu-i">
+			   
+                  <div class="mobile-logo-w">
+                     <div class="logo-element">HUGE</div>
+                  </div>
+				 
+                  <div class="mobile-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+               </div>
+            </div>
+			 -->
+         </header>
+
+         <section class="intro-w layout-v1" id="sectionIntro">
+            <div class="os-container">
+               <div class="intro-i">
+                  <div class="intro-description">
+                     <h1 class="intro-heading">Physics Based Image Deshadowing Using Local Linear Model<br><br><br></h1>
+                     <!--<div class="intro-buttons">
+                     	<a class="btn btn-primary" href="Image_Deshadow.pdf" target="_blank">
+                          <span>Paper</span></a>
+                     </div>-->
+					 <!-- <div class="intro-buttons">
+                     	<a class="btn btn-primary" href="https://www.n12.co.il" target="_blank">
+                            <span>Code</span> </a>
+                     </div> -->
+                  </div>
+                  <div class="intro-media">
+                     <div class="shot shot1" style="cursor: auto;">
+                        <!--<div class="shot-i" style="background-image: url('images/our_images/screens/system.png'); background-size: 100% 62.383%; background-repeat: no-repeat;"></div>-->
+						<div class="shot-i" style="background-image: url('images/our_images/screens/system.png'); background-size: 100% 66.24%; background-repeat: no-repeat; cursor: auto;"></div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="section-header-w" id="sectionAbstract">
+            <div class="os-container">
+               <div class="section-header">
+                  <h2 class="section-title"> Abstract</h2>
+                  <div class="section-desc">Image deshadowing algorithms remove shadows from images. 
+				  This requires both detecting where the shadow is and, once detected, removing it from the image. 
+				  This work focuses on the shadow removal part. We follow a common physical shadow formation model 
+				  and learn its parameters using a deep neural network. The problem is challenging because the model 
+				  assumes six parameters per pixel, which makes the problem ill-posed. Common deshadowing methods use 
+				  neural networks to estimate a simplified model that requires only three parameters per pixel. 
+				  This leads to good results, but close inspection on real images reveals its limitations. In contrast, 
+				  we estimate the full model (i.e., six parameters per pixel) directly. Remarkably, our deshadowing network is 
+				  considerably smaller, compared to alternative methods, while producing results that are better, on standard datasets.</div>
+				  
+               </div>
+            </div>
+         </section>
+
+		<!--
+		<section class="section-header-w" id="sectionCoeffRed">
+				<div class="os-container">
+				   <div class="section-header">
+					  <h2 class="section-title"> Estimated Coefficient Maps</h2>
+					  <div class="section-desc"> 
+					    Coefficients maps <i> w </i> and <i> b </i> for the red color channel, estimated with our network.
+					 </div> 
+				   </div>
+				</div>
+			</section>
+				<div> 
+					
+				<section class="demos-w">
+						<div class="row justify-content-md-center">
+						   <div class="col-sm-10 col-xl-10  demo-item sreveal is-visible" style="-webkit-transition: none !important">
+							  <a class="demo-w">
+								 <div class="demo-shot-w"  style="background-color: #f8f8f8; margin:0px; padding:0px">
+									<div class="demo-shot" style="background-image: url('images/our_images/Coeff_Red/Coeff_Red_no_bg.png'); background-size: 100% 40.3%; background-repeat: no-repeat;"></div>
+								 </div>
+							  </a>
+						   </div>
+						</div>
+					</section>
+					
+				</div>
+		-->
+		<!-- New -->
+		<section class="section-header-w" id="sectionCoeffRed">
+            <div class="os-container">
+               <div class="section-header">
+                  <h2 class="section-title">Estimated shadow coefficients maps</h2>
+                  <div class="section-desc">We show an example for our network estimated shadow coefficients maps <i> w </i> and <i> b </i> 
+				  for a single color channel (red) in the figure below. As can be seen, the coefficients maps are piecewise 
+				  smooth and the values of <i> w </i> and <i> b </i> depend on the pixel's color and spatial location. 
+				  For example, higher values of <i> w </i> can be found at the upper shadow part close to the occluding figure, 
+				  where the shadow intensity is greater.</div>
+               </div>
+            </div>
+         </section>
+
+         <section class="demos-w" ng-controller="demosController as demos">
+            <div class="row">
+               <div class="col-sm-6 col-xl-4 demo-item sreveal is-visible {{demo.class}}" ng-repeat="demo in demos.demo" style="-webkit-transition: none !important">
+                  <a class="demo-w">
+                     <div class="demo-header" style="text-transform: none; font-size: 1.5rem;" ng-bind-html='demo.header'></div>
+                     <div class="demo-shot-w" style="background-color: #f8f8f8">
+                        <div class="demo-shot" style="background-image: url('{{demo.image}}'); background-repeat: no-repeat; background-size: 70% 100%;"></div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </section>
+		<!-- End new -->
+		
+		<section class="section-header-w" id="image1">
+            <div class="os-container">
+               <div class="section-header">
+                  <h2 class="section-title">Shadow Masks Fine-tuning</h2>
+                  <div class="section-desc">We estimate the shadow masks using the shadow detection network BDRAR developed by Zhu et al [1].
+				  We fine-tuned the original model on the ISTD+ train set and evaluated the results with IoU and BER (balance error rate).
+				  Using fine-tuning, we managed to increase the mean IoU, on the ISTD+ test set, from <i>0.794</i> to <i>0.91</i>.
+				  At the same time, the BER dropped from <i>5.61</i> to <i>1.94</i>.
+				  We present below an example for the shadow mask estimation before and after fine-tuning. For this image, after the fine-tuning, the IoU increased from <i>0.06</i> to <i>0.95</i> and the BER dropped from <i>11.4</i> to <i>0.75</i>. <br><br>
+				   <a style="color:#868686" href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Lei_Zhu_Bi-directional_Feature_Pyramid_ECCV_2018_paper.pdf" target="_blank">
+				   [1] Lei Zhu, Zijun Deng, Xiaowei Hu, Chi-Wing Fu, Xuemiao Xu, Jing Qin and Pheng-Ann Heng. Bidirectional Feature Pyramid Network with Recurrent Attention 
+				   Residual Modules for Shadow Detection</a><br>
+				   </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="demos-w" ng-controller="industriesController as industries">
+            <div class="row">
+               <div class="col-sm-6 col-xl-4 demo-item sreveal is-visible {{demo.class}}" ng-repeat="industry in industries.industry" style="-webkit-transition: none !important">
+                  <a class="demo-w">
+                     <div class="demo-header" style="text-transform: none; font-size: 1.5rem;" ng-bind-html='industry.header'></div>
+                     <div class="demo-shot-w" style="background-color: #f8f8f8">
+                        <div class="demo-shot" style="background-image: url('{{industry.image}}'); background-repeat: no-repeat; background-size: 70% 100%;"></div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </section>
+		
+		<!--
+		<section class="section-header-w" id="table1">
+				<div class="os-container">
+				   <div class="section-header">
+					  <h2 class="section-title"> Analysis of the optimal constant and local linear models</h2>
+					  <div class="section-desc"> 
+					   We conducted an ablation study to investigate the gap between our solution and the optimal solution obtained by computing <i> w, b </i> 
+					   maps using the shadow and shadow-free images. We created <i> w, b </i> maps in the following manner. For the constant linear model, we 
+					   calculated a single set of shadow parameters to the entire umbra area by performing least-squares regression between the corresponding 
+					   pixels in the shadow and shadow-free images. For the local linear model, we calculated a set of shadow parameters per pixel similar to 
+					   our network. First, we calculated three coefficients maps using least-squares on a disk-shaped neighborhood sized <i> 9 </i>,  <i> 19 </i> and <i> 33 </i> pixels. 
+					   Then, the maps were combined together according to weights determined by the absolute normalized cross correlation values. Values closer to 
+					   one represent an area with a good linear fit and thus is weighted higher. To further improve the results around the shadow border, we 
+					   follow with an aggregation step. Since each pixel belongs to several overlapping disk shaped neighborhoods we can combine the estimations 
+					   of all the relevant neighborhoods by weighted average. The weight is again determined by the absolute normalized cross correlation value.
+					   <br> <br> The table below reports the MAE calculated using the optimal constant and local linear models.
+
+						</div>
+					 </div> 
+				   </div>
+				</div>
+			</section>
+			
+		<div> 
+					
+			<section>
+				<div class="container">
+					<div class="table-responsive-sm center">
+						<table class="table" style="width: 100%">
+							 <thead>
+								<tr>
+								  <th class="text-center" scope="col" style="font-size:1em; font-weight:bold">Model</th>
+								  <th class="text-center" scope="col" style="font-size:1em; font-weight:bold">Shadow (MAE)</th>
+								  <th class="text-center" scope="col" style="font-size:1em; font-weight:bold">Non-Shadow (MAE)</th>
+								  <th class="text-center" scope="col" style="font-size:1em; font-weight:bold">All (MAE)</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th class="text-center" scope="row">Constant Linear Model</th>
+								  <td class="text-center">5.56</td>
+								  <td class="text-center">2.53</td>
+								  <td class="text-center">3.02</td>
+								</tr>
+								<tr>
+								  <th class="text-center" scope="row">Local Linear Model</th>
+								  <td class="text-center">2.46</td>
+								  <td class="text-center">1.45</td>
+								  <td class="text-center">1.61</td>
+								</tr>
+							  </tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+					
+		</div>
+			<section class="section-header-w" id="table1">
+				<div class="os-container">
+				   <div class="section-header">
+					  <div class="section-desc"> 
+					   We find that there is a gap in performance between the optimal solution (<i>2.46</i> MAE) and our method (<i>6.56</i> MAE), 
+					   as expected.  Given that in a previous ablation experiment we found little difference in the results between using the 
+					   predicted shadow mask and the ground truth mask, we conclude that improving the <i> w, b </i> estimation is key to future progress.  
+
+						</div>
+					 </div> 
+				   </div>
+				</div>
+			</section> -->
+				
+		<section class="section-header-w" id="table2">
+				<div class="os-container">
+				   <div class="section-header">
+					  <h2 class="section-title"> Network Architecture</h2>
+					  <div class="section-desc"> 
+					  Our network is based on the multi-scale context aggregation network (CAN32 configuration) 
+					  developed by Chen et al [1] in the context of semantic image analysis. The network is a fully-convolutional 
+					  network with 10 layers. Except for the last layer, each convolutional layer follows with an adaptive normalization 
+					  and a leaky ReLU layer. The parameters of the convolutions are summarized in the table below. As can be seen, 
+					  the network contains convolutions with a growing dilation rate. The usage of dilation allows the network to process 
+					  information from a large receptive field (513 x 513), while using a small number of parameters. 
+					  The input to the network is a 4-channel tensor containing the shadow image and the shadow mask. The output is a 6-channel 
+					  tensor containing the shadow coefficients maps with the same resolution as the input. <br><br>
+					   <a style="color:#868686" href="https://openaccess.thecvf.com/content_ICCV_2017/papers/Chen_Fast_Image_Processing_ICCV_2017_paper.pdf" target="_blank">
+					   [1] Qifeng Chen, Jia Xu, and Vladlen Koltun. Fast image processing with fully-convolutional networks </a><br>
+
+					  <!--
+					   We use the multi-scale context aggregation network (CAN32), developed in the context of semantic 
+					   image analysis. The network is Fully convolutional, the input image and output have the same resolution. 
+					   The network was suggested by Chen etal [1], it includes 10 layers. The first 8 layers contain convolutions 
+					   with increasing dilation step size. The 9<sup>th</sup> layer is convolution layer without dilation. 
+					   For these 9 layers we use the leaky ReLU activation function presented by Xu etal [2], for the last layer 
+					   we use a linear transformation (1 x 1 convolution) without non-linearity, and changed its output to be 6 
+					   channels, instead of 3. The usage of dilation allows the network to process information from large receptive 
+					   field (513 x 513), while using small number of parameters.<br><br>
+					   <a style="color:#868686" href="https://openaccess.thecvf.com/content_ICCV_2017/papers/Chen_Fast_Image_Processing_ICCV_2017_paper.pdf" target="_blank">
+					   [1] Qifeng Chen, Jia Xu, and Vladlen Koltun. Fast image processing with fully-convolutional networks </a><br>
+					   <a style="color:#868686" href="https://arxiv.org/pdf/1505.00853.pdf" target="_blank">
+					   [2] Bing Xu, Naiyan Wang, Tianqi Chen, and Mu Li. Empirical evaluation of rectified activations in convolutional 
+					   network </a>-->
+
+					   </div>
+					 </div> 
+				   </div>
+				</div>
+			</section>
+			
+		<div> 
+					
+			<section>
+				<div class="container">
+					<div class="table-responsive-sm center">
+						<table class="table" style="width: 100%">
+							 <thead>
+								<tr>
+								  <th class="text-center" scope="col" style="font-size:1em; font-weight:bold">Layer</th>
+								  <th class="text-center" scope="col" style="font-size:1em; font-weight:bold">Convolution</th>
+								  <th class="text-center" scope="col" style="font-size:1em; font-weight:bold">Dilation</th>
+								  <th class="text-center" scope="col" style="font-size:1em; font-weight:bold">Receptive Field</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th class="text-center" scope="row">1</th>
+								  <td class="text-center" > 3 X 3</td>
+								  <td class="text-center" > 1</td>
+								  <td class="text-center" > 3 X 3</td>
+								</tr>
+								<tr>
+								  <th class="text-center" scope="row">2</th>
+								  <td class="text-center" >3 X 3</td>
+								  <td class="text-center" >2</td>
+								  <td class="text-center" >7 X 7</td>
+								</tr>
+								<tr>
+								  <th class="text-center" scope="row">3</th>
+								  <td class="text-center" >3 X 3</td>
+								  <td class="text-center" >4</td>
+								  <td class="text-center" >15 X 15</td>
+								</tr>
+								<tr>
+								  <th class="text-center" scope="row">4</th>
+								  <td class="text-center"> 3 X 3</td>
+								  <td class="text-center"> 8</td>
+								  <td class="text-center"> 31 X 31</td>
+								</tr><tr>
+								  <th class="text-center" scope="row">5</th>
+								  <td class="text-center">3 X 3</td>
+								  <td class="text-center">16</td>
+								  <td class="text-center">63 X 63</td>
+								</tr>
+								<tr>
+								  <th class="text-center" scope="row">6</th>
+								  <td class="text-center" >3 X 3</td>
+								  <td class="text-center" >32</td>
+								  <td class="text-center" >127 X 127</td>
+								</tr><tr>
+								  <th class="text-center"  scope="row">7</th>
+								  <td class="text-center" >3 X 3</td>
+								  <td class="text-center" >64</td>
+								  <td class="text-center" >255 X 255</td>
+								</tr>
+								<tr>
+								  <th class="text-center"  scope="row">8</th>
+								  <td class="text-center" >3 X 3</td>
+								  <td class="text-center" >128</td>
+								  <td class="text-center" >511 X 511</td>
+								</tr><tr>
+								  <th class="text-center"  scope="row">9</th>
+								  <td class="text-center" >3 X 3</td>
+								  <td class="text-center" >1</td>
+								  <td class="text-center" >513 X 513</td>
+								</tr>
+								<tr>
+								  <th class="text-center"  scope="row">10</th>
+								  <td class="text-center" >1 X 1</td>
+								  <td class="text-center" >1</td>
+								  <td class="text-center" >513 X 513</td>
+								</tr>
+
+							  </tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+					
+		</div>
+	
+
+		<!-- <section class="section-header-w" id="sectionCoeffRed">
+				<div class="os-container">
+				   <div class="section-header">
+					  <h2 class="section-title"> Estimated Coefficient Maps</h2>
+					  <div class="section-desc"> 
+					   Our network estimated coefficient maps <i> w </i> and <i> b </i> for the red channel</div>
+					 </div> 
+				   </div>
+				</div>
+			</section>
+			<table style="width:100%">
+			  <tr>
+				<th>Company</th>
+				<th>Contact</th>
+				<th>Country</th>
+			  </tr>
+			  <tr>
+				<td>Alfreds Futterkiste</td>
+				<td>Maria Anders</td>
+				<td>Germany</td>
+			  </tr>
+			  <tr>
+				<td>Centro comercial Moctezuma</td>
+				<td>Francisco Chang</td>
+				<td>Mexico</td>
+			  </tr>
+			</table>-->
+		 <!--locate image to the right-->
+		 <!--
+		 <section class="intro-w layout-v1" id="sectionCoeffRed">
+            <div class="os-container">
+               <div class="intro-i">
+                  <div class="intro-description" style="vertical-align: text-top">
+					<h2 class="section-title" style="color:#42b129; vertical-align: text-top"> Physics Based Image Deshadowing Using Local Linear Model </h2>
+                     
+					 <p style="vertical-align: text-top">Our network estimated coefficient maps &#42934 and &#42933 for the red channel<br><br><br><br><br><br><br><br><br><br><br><br></p>
+                  </div>
+                  <div class="intro-media">
+                     <div class="shot shot1">
+                      <div class="shot-i" style="background-image: url('images/our_images/Coeff_Red.png'); background-size: 100% 40.3%; background-repeat: no-repeat;" onclick="window.location='images/our_images/screens/system_no_bg.png'"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>-->
+		 
+		 <!--
+         <section class="section-header-w centered" id="sectionLinearShadowModel">
+            <div class="os-container">
+               <div class="section-header">
+                  <h2 class="section-title"> Linear shadow model</h2>
+                  <div class="section-desc">We use the physical shadow formation model. 
+				  The purpose of this model is to map the connec-tion between a shadowed pixel to its corresponding shadow-free pixel.  
+				  The light intensity reflected from a point on adiffusing surface depends on the reflectance of the surfacematerial and the scene illumination. 
+				  For a point lying on theshadow-free area, the illumination can be expressed as thesum of direct and ambient illumination components.  
+				  Thus,the light intensity reflected from the shadow-free area is</div>
+                
+               </div>
+            </div>
+         </section>
+		 
+         <section class="section-header-w centered" id="sectionMethod">
+            <div class="os-container">
+               <div class="section-header">
+                  <h2 class="section-title"> Method</h2>
+                  <div class="section-desc">Our network takes asinput a shadow image and optional mask (binary or proba-bility)   
+				  Thenetwork outputs6channels that represent the shadow pa-rameters(w,b)per color channel per pixel.  
+				  The networkoutputs the predicted shadow free image We  use  the  multi-scale  context  aggregation  network(CAN), 
+				  developed in the context of semantic image anal-ysis. The input image and output have the same resolution.We are 
+				  using the architecture suggested by Chenet al. [2],with9layers instead of10. The first7layers contain convo-lutions 
+				  with increasing dilation step size. At the end of each</div>                
+               </div>
+            </div>
+         </section>
+		 	-->
+	
+			<section class="section-header-w" id="sectionExamples">
+				<div class="os-container">
+				   <div class="section-header">
+					  <h2 class="section-title"> ISTD+ Qualitative Examples</h2>
+					  <div class="section-desc"> 
+					   <a style="color:#868686" href="https://arxiv.org/pdf/1908.08628.pdf" target="_blank">[1] Hieu Le and Dimitris Samaras. Shadow removal via shadowimage decomposition</a><br>
+					   <a style="color:#868686" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_From_Shadow_Generation_To_Shadow_Removal_CVPR_2021_paper.pdf" target="_blank">[2] Zhihao Liu, Hui Yin, Xinyi Wu, Zhenyao Wu, Yang Mi, and Song Wang. From shadow generation to shadow removal </a><br> 
+					   <a style="color:#868686" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560256.pdf" target="_blank">[3] Hieu Le and Dimitris Samaras. From shadow segmentation to shadow removal </a><br> 
+					   <a style="color:#868686" href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Hu_Direction-Aware_Spatial_Context_CVPR_2018_paper.pdf" target="_blank">[4] Xiaowei Hu, Chi-Wing Fu, Lei Zhu, Jing Qin and Pheng-Ann Heng. Direction-aware spatial context features for shadow detection and removal </a><br> 
+					   <a style="color:#868686" href="https://arxiv.org/pdf/1608.00762.pdf" target="_blank">[5] Han Gong and Darren Cosker. Interactive removal and ground truth for difficult shadow scenes </a><br>
+					   <a style="color:#868686" href="https://arxiv.org/pdf/1911.08718.pdf" target="_blank">[6] Xiaodong Cun, Chi-Man Pun, and Cheng Shi. Towards ghost-free shadow removal via dual hierarchical aggregation network and shadow matting gan</a></div>
+						<div class="filters">
+						<!---   <span>Filters : {{image_gallery.gallery_id}} </span>
+						 <!-- <ul id="filters">
+						 <ul>
+							 <li class="active" data-filter=".popular">popular</li>
+							 <li data-filter=".vr">vr</li>
+							 <li data-filter=".3d">3d</li>
+						 </ul> -->
+					 </div> 
+				   </div>
+				</div>
+			</section>
+			<div class="section-header-w " ng-controller="galleriesController as galleries" >
+				<div ng-repeat="image_gallery in galleries.gallery" class="{{image_gallery.gallery_id}}" > 
+				<!-- <section class="section-header-w centered" id="{{image_gallery.gallery_id}}"> -->
+					<div class="os-container">
+					   <div>
+						  <div class="filters" >
+							 <span>Image: {{image_gallery.gallery_id}} </span> 
+							 <!-- <ul id="filters"> -->
+							 <ul class="filters_ui" id="filters_{{image_gallery.gallery_id}}" >
+								<!-- <li class="active" data-filter=".popular">popular</li>
+								 <li data-filter=".vr">vr</li>
+								 <li data-filter=".3d">3d</li> -->
+								 <li ng-repeat="image_names in image_gallery.image_titles" id="{{image_names.id}}" ng-class="{'active' : $index == 0}" data-filter=".{{image_names.filter}}" >
+									{{image_names.title}}
+								 </li>
+							 </ul>
+						 </div>
+					   </div>
+					</div>
+					<!-- </section> -->
+					<section class="demos-w">
+					<!-- <section class="demos-w" ng-controller="demosController"> -->
+						<div class="row justify-content-md-center">
+						   <!--<div class="col-sm-6 col-xl-4 demo-item sreveal {{demo.class}}" ng-repeat="demo in image_gallery.demos" ng-class="{'is-visible' : $index == 0}" style="-webkit-transition: none !important">-->
+						   <div class="col-sm-6 col-xl-6  demo-item sreveal {{demo.class}}" ng-repeat="demo in image_gallery.demos" ng-class="{'is-visible' : $index == 0}" style="-webkit-transition: none !important">
+							  <a class="demo-w">
+								 <div class="demo-header" ng-bind-html='demo.header' ></div>
+								 <div class="demo-shot-w"  style="background-color: #f8f8f8">
+									<div class="demo-shot" style="background-image: url('{{demo.image}}'); background-size: 73.3% 100%; background-repeat: no-repeat;"></div>
+								 </div>
+							  </a>
+						   </div>
+						</div>
+					</section>
+				</div>
+			</div>
+			
+	<!--SRD-->
+	<div ng-controller="examplesController as examples" >
+		<div ng-repeat="example_section in examples.example">
+			<section class="section-header-w " id="{{ example_section.example_id }}">
+				<div class="os-container">
+				   <div class="section-header">
+					  <h2 class="section-title"> {{ example_section.example_title }}</h2>
+					  <div class="section-desc" ng-bind-html='"<div> {{example_section.description}} </div>"'> 
+					   </div>
+						<div class="filters">
+						<!---   <span>Filters : {{image_gallery.gallery_id}} </span>
+						 <!-- <ul id="filters">
+						 <ul>
+							 <li class="active" data-filter=".popular">popular</li>
+							 <li data-filter=".vr">vr</li>
+							 <li data-filter=".3d">3d</li>
+						 </ul> -->
+					 </div> 
+				   </div>
+				</div>
+			</section> <!-- section repeater -->
+			<div class="section-header-w centered">
+				<div ng-repeat="example_image_gallery in example_section.image_samples" class="{{example_image_gallery.sample_gallery_id}}" > 
+					<div class="os-container">
+					   <div>
+						  <div class="filters" >
+							 <span>Image: {{ example_image_gallery.sample_gallery_id }} </span>
+							 <!--<span>Gallery is: {{ example_image_gallery.sample_gallery_id }} </span>-->
+
+							 <ul class="filters_ui" id="filters_{{example_image_gallery.sample_gallery_id}}" >
+								 <li ng-repeat="image_names in example_image_gallery.image_titles" id="{{image_names.id}}" ng-class="{'active' : $index == 0}" data-filter=".{{image_names.filter}}" >
+									{{image_names.title}}
+								 </li>
+							 </ul>
+						 </div>
+					   </div>
+					</div>
+					<section class="demos-w">
+						<div class="row justify-content-md-center">
+						   <div class="col-sm-6 col-xl-6  demo-item sreveal {{demo.class}}" ng-repeat="demo in example_image_gallery.demos" ng-class="{'is-visible' : $index == 0}" style="-webkit-transition: none !important">
+							  <a class="demo-w">
+								 <div class="demo-header" ng-bind-html='demo.header' ></div>
+								 <div class="demo-shot-w"  style="background-color: #f8f8f8">
+									<div class="demo-shot" style="background-image: url('{{demo.image}}'); background-size: 73.3% 100%; background-repeat: no-repeat;"></div>
+								 </div>
+							  </a>
+						   </div>
+						</div>
+					</section>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+		
+	
+	
+	
+         <!-- <footer class="footer-w">
+            <div class="fluid-container">
+               <div class="deep-footer">
+               		&copy; <span class="year"></span> Squirrellabs All rights reserved.
+               	</div>
+            </div>
+         </footer> -->
+         <!--<div class="display-type"></div>
+      </div>-->
+	  
+      <!--<div class="reg_container">
+          <div class="reg_optionbtn">
+              <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          <!-- <div class="reg_whitespace"></div> -->
+			
+		<!--
+          <div class="home_register_form">
+              <div class="form-content">
+                  <p>If you like this theme, Please support us by rating 5 stars
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     <i class="fa fa-star" aria-hidden="true"></i>
+                     (<a href="images/rate.png" rel="prettyPhoto">How to rate?</a>).
+                     It keeps us motivated for improving our Product & Support.</p>
+                  <p>We greatly appreciate your Business and we will give absolutely <b>FREE</b> another item, from our <a href="https://themeforest.net/user/squirrellabs/portfolio" target="_blank">ThemeForest portfolio</a>, this is great special offer!</p>
+              </div>
+               <a class="btn btn-primary btn-md btn-rate" href="https://themeforest.net/downloads" target="_blank">RATE US</a>
+               <a class="btn btn-primary btn-md btn-contact" href="https://themeforest.net/user/squirrellabs" target="_blank">Contact Us</a>
+          </div>
+      </div>
+
+	  -->
+	  
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/angular.min.js"></script>
+      <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
+      <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+      <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+      <script type="text/javascript" src="js/jquery.nav.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-49512727-3', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+      <!-- Yandex.Metrika counter -->
+      <script type="text/javascript" >
+         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+         ym(50698168, "init", {
+            id:50698168,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+         });
+      </script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/50698168" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      <!-- /Yandex.Metrika counter -->
+   </body>
+</html>
