@@ -183,31 +183,31 @@ var exampleslist = [
 				demos: [
 					{
 			class: 'SRD1',
-			image: 'images/our_images/SRD/shadow_image/_MG_2906.jpg',
+			image: 'images/our_images/SRD/shadow_image/MG_2906.jpg',
 			header: '',
-			url: 'images/our_images/SRD/shadow_image/_MG_2906.jpg',
+			url: 'images/our_images/SRD/shadow_image/MG_2906.jpg',
 		},
 		{
 			class: 'SRD2',
-			image: 'images/our_images/SRD/shadow_free_image/_MG_2906.jpg',
+			image: 'images/our_images/SRD/shadow_free_image/MG_2906.jpg',
 			header: '',
-			url: 'images/our_images/SRD/shadow_free_image/_MG_2906.jpg',
+			url: 'images/our_images/SRD/shadow_free_image/MG_2906.jpg',
 		},
 		{
 			class: 'SRD3',
-			image: 'images/our_images/SRD/ours/_MG_2906.jpg',
+			image: 'images/our_images/SRD/ours/MG_2906.jpg',
 			header: '',
-			url: 'images/our_images/SRD/ours/_MG_2906.jpg',
+			url: 'images/our_images/SRD/ours/MG_2906.jpg',
 		},
 		{
 			class: 'SRD4',
-			image: 'images/our_images/SRD/DSC/_MG_2906.jpg',
+			image: 'images/our_images/SRD/DSC/MG_2906.jpg',
 			header: '',
 			url: 'https://openaccess.thecvf.com/content_cvpr_2018/papers/Hu_Direction-Aware_Spatial_Context_CVPR_2018_paper.pdf',
 		},
 		{
 			class: 'SRD5',
-			image: 'images/our_images/SRD/Towards_ghost_free/_MG_2906.jpg',
+			image: 'images/our_images/SRD/Towards_ghost_free/MG_2906.jpg',
 			header: '',
 			url: 'https://arxiv.org/pdf/1911.08718.pdf',
 		}]
@@ -219,31 +219,31 @@ var exampleslist = [
 				demos: [
 					{
 			class: 'SRD12',
-			image: 'images/our_images/SRD/shadow_image/_MG_2931.jpg',
+			image: 'images/our_images/SRD/shadow_image/MG_2931.jpg',
 			header: '',
-			url: 'images/our_images/SRD/shadow_image/_MG_2931.jpg',
+			url: 'images/our_images/SRD/shadow_image/MG_2931.jpg',
 		},
 		{
 			class: 'SRD22',
-			image: 'images/our_images/SRD/shadow_free_image/_MG_2931.jpg',
+			image: 'images/our_images/SRD/shadow_free_image/MG_2931.jpg',
 			header: '',
-			url: 'images/our_images/SRD/shadow_free_image/_MG_2931.jpg',
+			url: 'images/our_images/SRD/shadow_free_image/MG_2931.jpg',
 		},
 		{
 			class: 'SRD32',
-			image: 'images/our_images/SRD/ours/_MG_2931.jpg',
+			image: 'images/our_images/SRD/ours/MG_2931.jpg',
 			header: '',
-			url: 'images/our_images/SRD/ours/_MG_2931.jpg',
+			url: 'images/our_images/SRD/ours/MG_2931.jpg',
 		},
 		{
 			class: 'SRD42',
-			image: 'images/our_images/SRD/DSC/_MG_2931.jpg',
+			image: 'images/our_images/SRD/DSC/MG_2931.jpg',
 			header: '',
 			url: 'https://openaccess.thecvf.com/content_cvpr_2018/papers/Hu_Direction-Aware_Spatial_Context_CVPR_2018_paper.pdf',
 		},
 		{
 			class: 'SRD52',
-			image: 'images/our_images/SRD/Towards_ghost_free/_MG_2931.jpg',
+			image: 'images/our_images/SRD/Towards_ghost_free/MG_2931.jpg',
 			header: '',
 			url: 'https://arxiv.org/pdf/1911.08718.pdf',
 		}]
